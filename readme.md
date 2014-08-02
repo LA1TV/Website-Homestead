@@ -13,4 +13,6 @@ You should now be able to browse to 'http://local.www.la1tv.co.uk:8000/' in your
 
 You can ssh into the virtual machine by executing 'vagrant ssh'.
 
+The database can be accessed from the host machine at 127.0.0.1, port 33060, with username 'homestead' and password 'secret'.
+
 The website repo is at "https://github.com/LA1TV/Website".
