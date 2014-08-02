@@ -1,0 +1,21 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+
+authorize: [Set this to your id_rsa folder. If you don't have any ssh keys you will need to generate some. e.g C:\Users\Joe Bloggs\.ssh\id_rsa]
+
+keys:
+    - [Same value as for 'authorize'.]
+
+folders:
+    - map: [Path to the root of the website. Not the public folder.]
+      to: /home/vagrant/Code/LA1-Website
+
+sites:
+    - map: local.www.la1tv.co.uk
+      to: /home/vagrant/Code/LA1-Website/public
+
+variables:
+    - key: APP_ENV
+      value: local
