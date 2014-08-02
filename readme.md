@@ -9,7 +9,7 @@ Uses [vagrant](https://www.vagrantup.com/).
 3. Edit your hosts file to contain "127.0.0.1  local.www.la1tv.co.uk".
 4. Execute "vagrant up" in the console.
 
-You should now be able to browse to 'http://local.www.la1tv.co.uk/' in your web browser and have the site up and running with the database seeded from the data in 'app/database/seeders'!
+You should now be able to browse to 'http://local.www.la1tv.co.uk:8000/' in your web browser and have the site up and running with the database seeded from the data in 'app/database/seeders'!
 
 You can ssh into the virtual machine by executing 'vagrant ssh'.
 
