@@ -15,6 +15,6 @@ CONFIG_FILE="/etc/nginx/conf.d/upload_size.conf"
 VAL="1000m"
 echo "client_max_body_size $VAL;" > "$CONFIG_FILE"
 echo "Restarting nginx."
-service php5-fpm restart
+service nginx restart
 cd "$HOME"
 echo "Finished custom setup script."
