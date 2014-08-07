@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 echo "Running custom setup script..."
 cd "/home/vagrant/Code/LA1-Website"
+echo "Executing 'composer self-update'"
+composer self-update
 echo "Executing 'composer install'"
 composer install
 echo "Setting up the database and seeding it."
