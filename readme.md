@@ -15,4 +15,6 @@ You can ssh into the virtual machine by executing 'vagrant ssh'.
 
 The database can be accessed from the host machine at 127.0.0.1, port 33060, with username 'homestead' and password 'secret'.
 
+phpMyAdmin will also be installed and is accessible at 'http://local.www.la1tv.co.uk:3406/'.
+
 The website repo is at "https://github.com/LA1TV/Website".

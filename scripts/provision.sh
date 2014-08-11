@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
+
 echo "Running custom setup script..."
+/vagrant/scripts/phpmyadmin/install-phpmyadmin.sh
+
+cd "$HOME"
 cd "/home/vagrant/Code/LA1-Website"
 echo "Executing 'composer self-update'"
 composer self-update

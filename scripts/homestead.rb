@@ -19,6 +19,7 @@ class Homestead
     config.vm.network "forwarded_port", guest: 80, host: 8000
     config.vm.network "forwarded_port", guest: 3306, host: 33060
     config.vm.network "forwarded_port", guest: 5432, host: 54320
+    config.vm.network "forwarded_port", guest: 3406, host: 3406 #phpMyAdmin
 
     # Configure The Public Key For SSH Access
     config.vm.provision "shell" do |s|
