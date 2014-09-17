@@ -4,6 +4,9 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 
+alias hh='cd ~/Code/LA1-Website'
+alias cda='(hh && exec composer dumpautoload)'
+
 function serve() {
 	if [[ "$1" && "$2" ]]
 	then
