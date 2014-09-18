@@ -2,7 +2,7 @@
 
 block="server {
     listen 80;
-    server_name local.www.la1tv.co.uk local.embed.la1tv.co.uk;
+    server_name www.la1tv.co.uk.local embed.la1tv.co.uk.local;
     root /home/vagrant/Code/LA1-Website/public;
 
     index index.html index.htm index.php;
@@ -25,7 +25,7 @@ block="server {
     location = /robots.txt  { access_log off; log_not_found off; }
 
     access_log off;
-    error_log  /var/log/nginx/local.www.la1tv.co.uk-error.log error;
+    error_log  /var/log/nginx/www.la1tv.co.uk.local-error.log error;
 
     error_page 404 /index.php;
 
@@ -44,5 +44,5 @@ block="server {
 }
 "
 
-echo "$block" > "/etc/nginx/sites-available/local.www.la1tv.co.uk"
-ln -fs "/etc/nginx/sites-available/local.www.la1tv.co.uk" "/etc/nginx/sites-enabled/local.www.la1tv.co.uk"
+echo "$block" > "/etc/nginx/sites-available/www.la1tv.co.uk.local"
+ln -fs "/etc/nginx/sites-available/www.la1tv.co.uk.local" "/etc/nginx/sites-enabled/www.la1tv.co.uk.local"
