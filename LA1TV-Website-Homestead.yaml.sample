@@ -12,12 +12,6 @@ folders:
     - map: [Path to the root of the website. Not the public folder.]
       to: /home/vagrant/Code/LA1-Website
 
-sites:
-    - map: local.www.la1tv.co.uk
-      to: /home/vagrant/Code/LA1-Website/public
-    - map: local.embed.la1tv.co.uk
-      to: /home/vagrant/Code/LA1-Website/public
-
 variables:
     - key: APP_ENV
       value: local

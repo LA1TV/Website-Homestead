@@ -20,6 +20,9 @@ echo "Setting 'client_max_body_size' for nginx."
 CONFIG_FILE="/etc/nginx/conf.d/upload_size.conf"
 VAL="1000m"
 echo "client_max_body_size $VAL;" > "$CONFIG_FILE"
+echo "Configuring sites..."
+/vagrant/scripts/configure-sites.sh
+echo "Configured sites."
 echo "Restarting nginx."
 service php5-fpm stop
 service nginx restart
