@@ -7,7 +7,6 @@ mkdir app/storage/files
 mkdir app/storage/file_chunks
 mkdir app/storage/logs
 mkdir app/storage/meta
-mkdir app/storage/pending_files
 mkdir app/storage/sessions
 mkdir app/storage/views
 echo "Created storage directories."
