@@ -29,7 +29,7 @@ service php5-fpm stop
 service nginx restart
 service php5-fpm start
 echo "Configuring cron tab..."
-/vagrant/scripts/crontab/crontab.sh
+/vagrant/scripts/crontab/install.sh
 echo "Configured cron tab."
 cd "$HOME"
 echo "Finished custom setup script."
