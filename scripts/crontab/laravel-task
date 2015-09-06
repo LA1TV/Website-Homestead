@@ -1,1 +1,1 @@
- * *   *   *   *   vagrant cd /home/vagrant/Code/LA1-Website && /usr/bin/php artisan scheduled:run
+ * *   *   *   *   vagrant /usr/bin/php /home/vagrant/Code/LA1-Website/artisan scheduled:run
