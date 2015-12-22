@@ -4,6 +4,7 @@ echo "Running custom setup script..."
 /vagrant/scripts/phpmyadmin/install-phpmyadmin.sh
 
 /vagrant/scripts/install-elasticsearch.sh
+/vagrant/scripts/install-redis.sh
 
 cd "$HOME"
 /vagrant/scripts/create-storage-directories.sh
