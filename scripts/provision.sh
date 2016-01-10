@@ -16,7 +16,7 @@ composer install
 echo "Setting up the database and seeding it."
 php artisan migrate --seed
 echo "Setting 'upload_max_filesize' and 'post_max_size' in 'php.ini'."
-CONFIG_FILE="/etc/php5/fpm/php.ini"
+CONFIG_FILE="/etc/php/7.0/fpm/php.ini"
 VAL="1000M"
 sed -i "s/\(upload_max_filesize *= *\).*/\1$VAL/" "$CONFIG_FILE"
 sed -i "s/\(post_max_size *= *\).*/\1$VAL/" "$CONFIG_FILE"
@@ -28,9 +28,9 @@ echo "Configuring sites..."
 /vagrant/scripts/configure-sites.sh
 echo "Configured sites."
 echo "Restarting nginx."
-service php5-fpm stop
+service php7.0-fpm stop
 service nginx restart
-service php5-fpm start
+service php7.0-fpm start
 echo "Configuring cron tab..."
 /vagrant/scripts/crontab/install.sh
 echo "Configured cron tab."
