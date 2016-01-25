@@ -8,15 +8,11 @@ block="server {
     index index.html index.htm index.php;
 
     charset utf-8;
-	
-    location /assets/scripts {
-        alias /home/vagrant/Code/LA1-Website/app/assets/scripts;
+
+    location /assets/built {
+        alias /home/vagrant/Code/LA1-Website/app/assets/builds;
     }
-	
-	location /assets/css {
-        alias /home/vagrant/Code/LA1-Website/app/assets/css;
-    }
-	
+
     location / {
         try_files \$uri \$uri/ /index.php?\$query_string;
     }
