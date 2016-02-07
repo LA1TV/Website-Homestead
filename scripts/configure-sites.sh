@@ -2,7 +2,7 @@
 
 block="server {
     listen 80;
-    server_name www.la1tv.co.uk.local embed.la1tv.co.uk.local;
+    server_name www.la1tv.co.uk.local embed.la1tv.co.uk.local assets.la1tv.co.uk.local;
     root /home/vagrant/Code/LA1-Website/public;
 
     index index.html index.htm index.php;
