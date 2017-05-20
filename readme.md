@@ -4,7 +4,7 @@ Based on laravel's homestead which [is located here](https://github.com/laravel/
 
 Uses [vagrant](https://www.vagrantup.com/).
 
-1. Simply copy 'LA1TV-Homestead.yaml.sample' to 'LA1TV-Homestead.yaml'.
+1. Simply copy 'LA1TV-Website-Homestead.yaml.sample' to 'LA1TV-Website-Homestead.yaml'.
 2. Fill in the placeholders in 'LA1TV-Homestead.yaml'.
 3. Edit your hosts file to contain "127.0.0.1  www.la1tv.co.uk.local" and "127.0.0.1  embed.la1tv.co.uk.local".
 4. Execute "vagrant up" in the console.
