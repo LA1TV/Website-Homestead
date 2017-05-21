@@ -18,3 +18,19 @@ The database can be accessed from the host machine at 127.0.0.1, port 33060, wit
 phpMyAdmin will also be installed and is accessible at 'http://127.0.0.1:3406/' and the embed subdomain is at 'http://embed.la1tv.co.uk.local:8000/'.
 
 The website repo is at "https://github.com/LA1TV/Website".
+
+
+# Troubleshooting
+## /tmp/vagrant-shell: line 2: /etc/php/7.0/fpm/php-fpm.conf: No such file or directory
+This problem here is that you have a newer vewsion of the laravel/homestead than expected. The newer versions make use of php 7.1 and the website expects php 7.0.
+
+To find the version you currently have use command ```vagrant box list```
+
+The list of versions can be viewed here: https://atlas.hashicorp.com/laravel/boxes/homestead/ <br />
+You want to find a version that is before version 1.0.0 and supports your provider.
+
+To remove the old version of laravel/homestead run ```vagrant box remove laravel/homestead```
+
+Then to download the older version run:  
+```vagrant box add laravel/homestead --box-version 0.6.0 --provider virtualbox```<br />
+(This assumes you are using virtual box, 0.6.1 wasn't used becuase it didn't have a version for virtualbox)
