@@ -6,7 +6,7 @@ rm -rf "phpmyadmin"
 mkdir "phpmyadmin"
 cd "phpmyadmin"
 echo "Cloning latest repository commit from STABLE branch. This may take a while."
-git clone -b "STABLE" --depth=1 https://github.com/phpmyadmin/phpmyadmin.git .
+git clone --branch RELEASE_4_2_13_1 --depth=1 https://github.com/phpmyadmin/phpmyadmin.git .
 echo "Cloned."
 echo "Creating config file..."
 cp "/vagrant/scripts/phpmyadmin/config.inc.php" "config.inc.php"
